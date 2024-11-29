@@ -2,6 +2,8 @@
 
 Documentação oficial do Vue: https://vuejs.org/
 
+## Passo a passo / passos de aula (front-end Vai na Web)
+
 Primeiro, abrir o terminal, ir pro Bash
 Podemos criar o projeto com o comando npm create vue@latest (e ir dando não pras coisas que aparecerem lá)
 
