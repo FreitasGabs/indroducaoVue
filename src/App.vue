@@ -88,6 +88,7 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.5em;
 }
 
 main {
@@ -98,12 +99,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 section {
   background-color: $cor-bg-destaque;
   margin: 2em;
   padding: 1.5em;
+  width: 50vw;
 
     h3{
       font-family: $font-titulos;
