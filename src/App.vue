@@ -34,7 +34,7 @@ function like(index) {
 
       <!-- para renderizar um dado da lógica, se for em uma tag - <tag>{{  }}</tag>; -->
       <!-- para renderizar em atributos, vamos usar o v-bind - : (atalho pro v-bind é dois pontos) -->
-      <img :src="imagens[0].src" alt="" @click="like(0)">
+      <img :src="imagens[0].src" alt="Coração para dar 'curtida' na publicação" @click="like(0)">
     </div>
 
     <h3>O que é linguagem de programação? Conheça as principais</h3>
@@ -44,7 +44,7 @@ function like(index) {
   <section>
     <div>
       <p>12 de jul, 2024</p>
-      <img :src="imagens[1].src" alt="" @click="like(1)">
+      <img :src="imagens[1].src" alt="Coração para dar 'curtida' na publicação" @click="like(1)">
     </div>
 
     <h3>GitHub agora permite fazer login sem precisar de senha</h3>
@@ -54,7 +54,7 @@ function like(index) {
   <section>
     <div>
       <p>21 de jun, 2024</p>
-      <img :src="imagens[2].src" alt="" @click="like(2)">
+      <img :src="imagens[2].src" alt="Coração para dar 'curtida' na publicação" @click="like(2)">
     </div>
 
     <h3>Por que os hiperlinks são azuis em sua maioria?</h3>
@@ -67,9 +67,36 @@ function like(index) {
 <!-- avisar que não é css, é scss -->
 <style scoped lang="scss">
 /* todo o estilo */
+
+$cor-bg-destaque: #17171A;
+$cor-bg: black;
+$cor-texto-destaque: #E07B67;
+$cor-texto: white;
+$font-titulos: "Space Grotesk";
+$font-texto: "Inter"; 
+
 header{
-  background-color: #17171A;
-  color: #E07B67;
+  background-color: $cor-bg-destaque;
+  color: $cor-texto-destaque;
+  font-family: $font-titulos;
+}
+
+main {
+  background-color: $cor-bg;
+  font-family: $font-texto;
+  color: $cor-texto;
+}
+
+section {
+  background-color: $cor-bg-destaque;
+
+    h3{
+      font-family: $font-titulos;
+    }
+
+    div {
+      color: $cor-texto-destaque
+    }
 }
 </style>
 
