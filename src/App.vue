@@ -89,6 +89,7 @@ header{
   justify-content: center;
   align-items: center;
   padding: 1.5em;
+  height: 15vh;
 }
 
 main {
@@ -100,6 +101,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 85vh;
 }
 
 section {
