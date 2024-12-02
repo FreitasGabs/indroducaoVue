@@ -5,7 +5,7 @@ import coracao from "../src/assets/heart_empty.svg"
 import curtida from "../src/assets/heart_curtido.svg"
 import { ref } from "vue";
 
-//fazemdo a lógica por trás de um "like"
+//fazendo a lógica por trás de um "like"
 const imagens = ref([
   { src: coracao, isLiked: false },
   { src: coracao, isLiked: false },
