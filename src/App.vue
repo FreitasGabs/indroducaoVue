@@ -75,27 +75,45 @@ $cor-texto: white;
 $font-titulos: "Space Grotesk";
 $font-texto: "Inter"; 
 
+body {
+  background-color: $cor-bg;
+}
+
 header{
   background-color: $cor-bg-destaque;
   color: $cor-texto-destaque;
   font-family: $font-titulos;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
   background-color: $cor-bg;
   font-family: $font-texto;
   color: $cor-texto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 section {
   background-color: $cor-bg-destaque;
+  margin: 2em;
+  padding: 1.5em;
 
     h3{
       font-family: $font-titulos;
     }
 
     div {
-      color: $cor-texto-destaque
+      color: $cor-texto-destaque;
+
+      display: flex;
+      justify-content: space-between;
     }
 }
 </style>
